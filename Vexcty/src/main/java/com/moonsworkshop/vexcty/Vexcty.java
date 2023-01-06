@@ -157,6 +157,8 @@ public class Vexcty extends JavaPlugin implements Listener, CommandExecutor {
 
     private UserManager userManager; // user manager
 
+
+     /* MONGO STUFF */
     private MongoClient client;
     private MongoDatabase database;
     private MongoCollection players;
