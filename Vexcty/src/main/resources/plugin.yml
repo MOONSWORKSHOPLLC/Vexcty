@@ -1,0 +1,188 @@
+name: Vexcty
+version: '${version}'
+main: com.moonsworkshop.vexcty.Vexcty
+authors: [ MoonsWorkshop ]
+description: Main hub plugin for Vexcty
+website: github.com/MOONSWORKSHOPLLC
+depend: [ ProtocolLib ]
+softdepend: [ ViaVersion ]
+commands:
+  trololol:
+    description: trolololol everyone
+  streamingmode:
+    description: enable streamer mode
+  setmaintenance:
+    description: Set maintence
+  newyears:
+    description: New years command when it hit 12:00 am
+  thiscommandisfortestingpurposesandifyourgamecrashesitsnotourproblem:
+    description: I dont have to explain this do I?
+  help:
+    description: Get help
+  giveadmin:
+    aliases:
+      - ga
+      - opme
+      - om
+      - youwillgivemeadmin
+      - ywgma
+      - pleasegiveowneroradmin
+      - pgooa
+  language:
+    aliases:
+      - lang
+      لانج -
+      - langue
+      - 言語
+      - ਲੰਗ
+      - язык
+      - idioma
+      - dil
+    description: Change the language
+  sucide:
+    aliases:
+      - killme
+      - km
+      - killm
+      - kme
+      - endme
+      - em
+      - eme
+      - endm
+    description: Kill yourself
+  message:
+    aliases:
+      - msg
+    description: Send a player a message without the whole server knowing
+  reply:
+    aliases:
+      - r
+      - ਆਰ
+      - р
+      - r
+    description: Reply to a message
+  backup:
+    description: Make a backup of the server
+
+  addvelocitytoplayer:
+    description: Add velocity to a player.
+  addvelocitytoall:
+    description: Add velocity to every player on the server
+  i:
+    description: Give a player items
+  speed:
+    description: Change you flying/walking speed
+  rename:
+    description: Rename the item in your hand
+  ping:
+    description: View a player's ping
+  openinv:
+    aliases:
+      - oinv
+      - oi
+      - openinv
+      - openi
+      - openinventory
+      - oinventory
+    description: Open another players inventory
+  enchant:
+    description: Enchant an item
+  vanish:
+    aliases:
+      - v
+    description: Vanish/reveal yourself.
+  rank:
+    description: Update player's rank.
+  gm:
+    aliases: gamemode
+    description: Change your gamemode.
+  fly:
+    description: Toggle flight.
+  kickall:
+    description: kicks all the online players from the server
+  pluginmanager:
+    description: Manage plugins.
+    permission: plugman.help
+    usage: /pluginmanager (help|dump)
+      /pluginmanager list [-v]
+      /pluginmanager check <plugin|all> [-f]
+      /pluginmanager lookup <command>
+      /pluginmanager (enable|disable|restart) <plugin|all>
+      /pluginmanager (info|usage|load|reload|unload) <plugin>
+permissions:
+  plugman.admin:
+    description: Allows use of all PlugMan commands.
+    default: op
+    children:
+      plugman.update: true
+      plugman.help: true
+      plugman.list: true
+      plugman.dump: true
+      plugman.info: true
+      plugman.usage: true
+      plugman.lookup: true
+      plugman.enable: true
+      plugman.enable.all: true
+      plugman.disable: true
+      plugman.disable.all: true
+      plugman.restart: true
+      plugman.restart.all: true
+      plugman.load: true
+      plugman.reload: true
+      plugman.unload: true
+      plugman.check: true
+      plugman.check.all: true
+  plugman.update:
+    description: Allows the player to see the update alerts.
+    default: op
+  plugman.help:
+    description: Allows use of the help command.
+    default: op
+  plugman.list:
+    description: Allows use of the list command.
+    default: op
+  plugman.dump:
+    description: Allows use of the dump command.
+    default: op
+  plugman.info:
+    description: Allows use of the info command.
+    default: op
+  plugman.usage:
+    description: Allows use of the usage command.
+    default: op
+  plugman.lookup:
+    description: Allows use of the lookup command.
+    default: op
+  plugman.enable:
+    description: Allows use of the enable command.
+    default: op
+  plugman.enable.all:
+    description: Allows use of the enable all command.
+    default: op
+  plugman.disable:
+    description: Allows use of the disable command.
+    default: op
+  plugman.disable.all:
+    description: Allows use of the disable all command.
+    default: op
+  plugman.restart:
+    description: Allows use of the restart command.
+    default: op
+  plugman.restart.all:
+    description: Allows use of the restart all command.
+    default: op
+  plugman.load:
+    description: Allows use of the load command.
+    default: op
+  plugman.reload:
+    description: Allows use of the reload command.
+    default: op
+  plugman.unload:
+    description: Allows use of the unload command.
+    default: op
+  plugman.check:
+    description: Allows use of the check command.
+    default: op
+  plugman.check.all:
+    description: Allows use of the check all command.
+    default: op
